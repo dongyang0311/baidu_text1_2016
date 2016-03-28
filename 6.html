@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>task1_6</title>
+<style>
+*{ margin:0; padding:0;}
+body{ background:#5d5d5d}
+.wrap{width:980px; height:1386px;margin:0 auto; background:#fff; margin-top:20px; margin-bottom:20px;}
+.content{width:892px; height:1386px; margin:0 auto;}
+.header{height:60px; width:100%; border-bottom:2px solid #938e8c;font-size:12px; font-family:'黑体';}
+.logo{background:#d45d5c; width:110px; height:20px; color:#fff; padding-top:40px; float:left; display:inline-block;}
+.logo p{margin-left:10px;}
+.date{float:right; margin-top:40px;display:inline-block;color:#d45d5c;}
+.banner{width:100%; height:301px; margin-top:34px; background:#fff;}
+.banner_left{width:641px; height:301px; background: url(task_1_6_1_03.png) no-repeat; float:left; display:inline-block;}
+.banner_left_green{float:left; display:inline-block; width:190px; height:301px; background:rgba(66,140,89,0.5);}
+.banner_left_red{float:right; display:inline-block;width:190px; height:301px; background:rgba(204,118,128,0.5);}
+.banner_right{width:223px; height:301px; float:right;}
+.band{width:213px; height:2px; background:#cc8091;margin-left:10px;}
+.about{line-height:30px; font-family:'微软雅黑';margin-left:10px;border-bottom:1px solid #000;}
+.about span,.technologe span{font-size:24px;}
+.technologe{line-height:30px;font-family:'微软雅黑';margin-left:10px;border-bottom:1px solid #000;}
+.small{height:10px;font-size:12px; color:#676767; font-family:'楷体';font-style: italic;margin-left:10px;}
+.biggreen{font-family:'微软雅黑';font-style: italic; font-size:116px; color:#75b86b; height:150px; margin-right:10px; margin-top:14px;}
+.div0{margin-top:5px;}
+.margin_left{margin-left:10px;margin-top:-5px;}
+.banner_right_bottom{font-size:55px; color:#cc8091; font-family:'微软雅黑'; float:left}
+.float_left{float:left;}
+.css_1{font-size:21px; color:#cc8091; font-family:'微软雅黑'; margin-top:19px;}
+.css_2{font-size:12px; color:#b8b8b8; font-family:'微软雅黑'}
+.content_one{width:641px; height:170px; margin-top:50px; background:#fff;}
+.content_one div{width:200px; height:100%;float:left; display:inline-block; margin-right:13px;}
+.what{font-size:16px; color:#418c59; font-family:'微软雅黑'; font-weight:bold;text-decoration:underline;text-transform:capitalize;}
+.p1{font-size:12px; color:#767777; font-family:'宋体'; line-height:16px; margin-top:10px;}
+.when{font-size:16px; color:#d2994f; font-family:'微软雅黑'; font-weight:bold;text-decoration:underline;text-transform:capitalize;}
+.p2{opacity:0.7;  font-size:12px; color:#231815; font-family:'微软雅黑'; line-height:16px; margin-top:10px;}
+.how{font-size:16px; color:#cc7680; font-family:'微软雅黑'; font-weight:bold;text-decoration:underline;text-transform:capitalize;}
+.p3{opacity:0.7;  font-size:12px; color:#231815; font-family:'微软雅黑'; line-height:20px; margin-top:10px;}
+.p4{opacity:0.7;font-size:12px; font-family:'微软雅黑'; line-height:16px; margin-top:20px;}
+.what_1{text-transform:capitalize;}
+.persent_1{font-style: italic;color:#cd4a48;}
+.p5{opacity:0.7;font-size:12px;font-family:'微软雅黑'; line-height:16px;}
+.p6{opacity:0.7;font-size:12px; font-family:'微软雅黑'; line-height:16px;}
+.content_two{width:100%; height:607px; margin-top:50px; background:#fff; margin-bottom:50px;}
+.content_two_left{width:410px; height:100%;float:left; display:inline-block; margin-right:24px;}
+.left_top{width:100%; height:154px;border-bottom:2px solid #11456b;}
+.left_bottom{margin-top:20px;}
+.left_bottom p{font-size:12px; color:#767777; font-family:'宋体'; line-height:16px;}
+.left_bottom p img{float:right; margin:20px 0px 10px 20px;}
+.left_bottom p span{font-size:70px; color:f5e327; font-family:'微软雅黑';float: left; width:83px; height:75px; line-height:75px; color:#f5e327;}
+.p7{font-size:42px; color:#11456b; font-family:'黑体'; font-weight:bold;line-height:50px;}
+.p7 span{font-size:72px; color:#f5e327; font-family:'黑体'; font-weight:bold; font-style:italic; margin-right:25px;}
+.p8{font-size:33px; color:#11456b; font-weight:bold; font-family:'黑体';}
+.content_two_right{width:458px; height:100%; float:left; display:inline-block;}
+.right_top{width:458px; height:258px; background:url(task_1_6_1_2.png) no-repeat; position:relative;}
+.right_top_banner{background:rgba(4,0,0,0.4); height:60px; width:100%; position:absolute; left:0; bottom:0;}
+.right_top_banner div{height:44px; border-left:3px solid #72b16a; margin-left:40px; margin-top:8px; line-height:44px; font-size:26px; color:#fff; font-family:'微软雅黑';}
+.p9{text-indent:24px;}
+.right_top_banner_span1{margin-left:12px; margin-right:6px;}
+.right_top_banner_span2{font-size:12px; color:#72b16a; font-family:'微软雅黑'; font-style:italic; line-height:140%;}
+.right_bottom{height:290px; width:100%; background:#eeedd6; margin-top:30px; padding-top:29px;}
+.right_bottom_div1{ font-size:16px; color:#5a5b5b; font-family:'宋体'; text-align:left; line-height:36px;width:438px;padding-left:20px;}
+.right_bottom_div1 p span{font-size:12px; font-style:italic;float:right; margin-right:20px;}
+.right_bottom_div2{margin-top:21px;}
+.div3{width:260px; height:160px; background:#d45d5c; float:left; display:inline-block;}
+.h{height:40px;}
+.div4{height:86px; width:70px; border-right:2px solid #fff; font-size:110px; font-family:'微软雅黑'; color:#fff; line-height:86px; margin-left:10px; float:left; display:inline-block;}
+.div5{float:left; display:inline-block;}
+.p10{font-size:21px; color:#fff; font-family:'黑体'; font-style:italic; line-height:24px; margin-left:6px;}
+.p11{font-size:12px; color:#fff; font-family:'黑体'; line-height:18px;margin-left:10px;}
+.div6{float:left; display:inline-block; width:198px; height:160px;}
+.div7{color:#d45d5c; font-size:72px; font-family:'黑体'; float:left; width:50px; height:20px; margin-left:-30px;}
+.p12{ font-size:14px; font-family:'黑体'; color:#5a5b5b; font-style:italic; margin-left:20px; text-indent:40px; margin-top:20px;}
+.div8{color:#d45d5c;font-size:72px; font-family:'黑体';float:right; margin-top:-22px; margin-right:-30px;}
+.footer{width:100%; height:60px;border-top:1px solid #938e8c;}
+.footer div{float:right; font-size:12px; color:#d45d5c; font-family:'黑体';}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+	<div class="content">
+    	<div class="header">
+        	<div class="logo">
+            	<p>ife.baidu.com</p>
+            </div>
+            <div class="date">
+            2016.03
+            </div>
+        </div>
+        
+        <div class="banner">
+        	<div class="banner_left">
+            	<div class="banner_left_green"></div>
+                <div class="banner_left_red"></div>
+            </div>
+            <div class="banner_right">
+            	<div class="band"></div>
+                <div class="div0">
+                	<span class="about">
+                	<span>A</span>BOUT</span>
+                </div>
+                <div>
+                	<span class="technologe">
+                	<span>T</span>ECHNOLOGE
+                    </span>
+                </div>
+                <div class="small">
+                	About technologe about technologe about technologe
+                </div>
+                <div class="biggreen">700</div>
+                <div class="margin_left">
+                	<span class="banner_right_bottom">3.2</span>
+                    <span class="float_left">
+                    	<p class="css_1">css</p>
+                        <p class="css_2">cssssssssccccscssc</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content_one" >
+        	<div>
+            	<p class="what">what</p>
+                <p class="p1">小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！</p>
+            </div>
+        	<div>
+            	<p class="when">when</p>
+                <p class="p2">小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！小岳岳是最棒的！</p>
+            </div>
+        	<div>
+            	<p class="how">how</p>
+                <p class="p3">小岳岳是最棒的！<br>小岳岳是最棒的！小岳岳是最棒的！<br>小岳岳是最棒的！</p>
+                <p class="p4">
+                	<span class="what_1">what</span>----------<span class="persent_1">40%</span></p>
+                <p class="p5">
+                	<span class="what_1">what</span>----------<span class="persent_1">30%</span></p>
+                <p class="p6">
+                	<span class="what_1">what</span>----------<span class="persent_1">20%</span></p>
+            </div>                        
+        </div>
+        
+        <div class="content_two">
+        	<div class="content_two_left">
+            	<div class="left_top">
+                	<p class="p7">
+                    	<span>THE</span>TECHNOLOGE OF FRONT</p>
+                    <p class="p8">前端技术领域</p>
+                </div>
+                <div class="left_bottom">
+                	<p><span>前</span>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端<img src="task_1_6_1_3.png">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+                    <p class="p9">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+                    <p class="p9">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+                </div>
+            
+            </div>
+            
+            <div class="content_two_right">            	
+                <div class="right_top">
+                	<div class="right_top_banner">
+                    	<div>
+                        	<span class="right_top_banner_span1">前端技术</span>
+                            <span class="right_top_banner_span2">前端技术前端技术</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_bottom">
+                	<div class="right_bottom_div1">
+                        <p>▲前端前端前端前端前端前端大前端.................<span>前端</span></p>
+                        <p>▲前端前端前端前端前端前端大前端...............<span>大前端</span></p>
+                        <p>▲前端前端前端前端前端前端大前端.................<span>前端</span></p>
+                    </div>
+                    <div class="right_bottom_div2">
+                    	<div class="div3">
+                        	<div class="h"></div>
+                        	<div class="div4"><p>0</p></div>
+                            <div class="div5">
+                            	<p class="p10">ONE TWO</p>
+                                <p class="p10">THREE FOUR FIVE</p>
+                                <p class="p11">hello world hello world<br> hello world</p>
+                                </div>
+                            
+                        </div>
+                        <div class="div6">                        	
+                            <div class="div7">“</div>
+                            <p class="p12">world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world</p>
+                            <div class="div8">”</div>                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+        	<div>ife.baidu.com</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
