@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>task1_11</title>
+        <style>
+		*{ font-family:"黑体"}
+        img{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+		body{ background:#fff;}
+		.ui-tab-content li img{width:100%;}
+		.table_one{ margin:0 auto;margin-top:10px; border-bottom:2px solid #e5e5e5; width:98%}
+		.table_one tr td{text-align:center; width:20%;}
+		.table_one tr td img{width:60%;}
+		.table_one tr td p{height:40px;}
+		.table_two{margin-top:20px;width:100%}
+		.table_two td{text-align:center; width:33%; border-right:2px solid #e5e5e5;}
+		.table_two td img{width:50%;}
+		.table_two_td{text-align:center; width:33%;}
+		.table_two_td img{width:60%;}
+		.p1{font-size:18px;}
+		.p2{font-size:14px;}
+		.p3{font-size:18px; height:35px; line-height:35px; border-bottom:2px solid #e5e5e5;}
+		.h{width:100%; height:34px; background:#f5f5f5; margin-top:20px;}
+		.div_one{width:95%; margin:0 auto;}
+		.div_one table{margin-top:20px;}
+		.div_one img{border:2px solid #ffb633; height:90px;display:block;}
+		.td_one{background:#f8f8f8; text-align:center; border-bottom:5px solid #fff;height:45px; }
+		.td_one p{margin-top:6px; margin-bottom:6px;}
+		.td_two{background:#f8f8f8; text-align:center; border-top:5px solid #fff;height:45px;}
+		h4{font-size:22px; margin-bottom:15px;}
+		.ui-nowrap{color:#c5c5c5;}
+		.bar{width:100%; height:2px; background:#f5f5f5;}
+		.div_two{height:300px; margin-left:15px; margin-right:15px;}
+		.p4{font-size:22px; height:50px; line-height:50px;}
+		.p5{color:#c5c5c5;}
+		.div_two img{width:32%;}
+        </style>
+        <link rel="stylesheet" href="frozen.css">
+        <script src="zepto.min.js"></script>
+        <script src="frozen.js"></script>
+    </head>
+    
+    <body ontouchstart>
+        <header class="ui-header ui-header-positive ui-border-b">
+            <i class="ui-icon-return" onclick="history.back()"></i><h1>标题</h1>
+        </header>
+       
+        <section class="ui-container">
+            <section id="tab">
+                <div class="demo-item">
+                    <div class="demo-block">
+                        <div class="ui-tab">
+                            <ul class="ui-tab-nav ui-border-b">
+                                <li class="current">岳岳</li>
+                                <li>云云</li>
+                                <li>鹏鹏</li>
+                                <li>帅帅</li>
+                            </ul>
+                            <ul class="ui-tab-content" style="width:300%">
+                                <li><img src="task_1_11_1.png" ></li>
+                                <li><img src="task_1_11_2.png" ></li>
+                                <li><img src="task_1_11_3.png" ></li>
+                                <li><img src="task_1_11_4.png" ></li>
+                            </ul>
+                        </div>
+                        <table border="0" cellspacing="0" cellpadding="0" class="table_one" >
+                          <tr>
+                            <td>
+                            	<img src="task_1_11_5.png"><p>我我</p></td>
+                            <td>
+                            	<img src="task_1_11_5.png"><p>的的</p></td>
+                            <td>
+                            	<img src="task_1_11_5.png"><p>天天</p></td>
+                            <td>
+                            	<img src="task_1_11_5.png"><p>呐呐</p></td>
+                            <td>
+                            	<img src="task_1_11_5.png"><p>啊啊</p></td>
+                          </tr>
+                        </table>
+                        <table border="0" cellspacing="0" cellpadding="0" class="table_two">
+                          <tr>
+                            <td>
+                            	<img src="task_1_11_6.png">
+                                <p class="p1">分栏一</p>
+                                <p class="p2">分栏小标题</p>
+                            </td>
+                            <td>
+                            	<img src="task_1_11_7.png">
+                                <p class="p1">分栏二</p>
+                                <p class="p2">分栏小标题</p>                                
+                            </td>
+                            <td class="table_two_td">
+                            	<img src="task_1_11_8.png">
+                                <p class="p1">分栏三</p>
+                                <p class="p2">分栏小标题</p>                                
+                            </td>
+                          </tr>
+                        </table>
+                        <div class="h"></div>
+                        <div class="div_one">
+                        	<p class="p3">模块一</p>
+                            <table width="100%" height="100%" cellspacing="0" cellpadding="0">
+                              <tr >
+                                <td rowspan="2" width="34%" align="center" valign="middle">
+                                	<img src="task_1_11_9.png">
+                                </td>
+                                <td width="32%" class="td_one">
+                                	<p>这是文字</p>
+                                </td>
+                                <td width="2%">
+                                </td>
+                                <td width="32%" class="td_one">
+                                	<p>这是文字</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="32%"  class="td_two">
+                                	这是文字
+                                </td>
+                                <td></td>
+                                <td width="32%" class="td_two">
+                                	这是文字
+                                </td>
+                              </tr>
+                            </table>
+                            <table width="100%" height="100%" cellspacing="0" cellpadding="0">
+                              <tr >
+                                <td rowspan="2" width="34%" align="center" valign="middle">
+                                    <img src="task_1_11_9.png">
+                                </td>
+                                <td width="32%" class="td_one">
+                                    <p>这是文字</p>
+                                </td>
+                                <td width="2%">
+                                </td>
+                                <td width="32%" class="td_one">
+                                    <p>这是文字</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="32%"  class="td_two">
+                                    这是文字
+                                </td>
+                                <td></td>
+                                <td width="32%" class="td_two">
+                                    这是文字
+                                </td>
+                              </tr>
+                            </table>                                       
+                        </div>           
+                    
+                    <!--重复的-->
+                        <div class="h"></div>
+                        <div class="div_one">
+                        	<p class="p3">模块二</p>
+                            <table width="100%" height="100%" cellspacing="0" cellpadding="0">
+                              <tr >
+                                <td rowspan="2" width="34%" align="center" valign="middle">
+                                    <img src="task_1_11_9.png">
+                                </td>
+                                <td width="32%" class="td_one">
+                                    <p>这是文字</p>
+                                </td>
+                                <td width="2%">
+                                </td>
+                                <td width="32%" class="td_one">
+                                    <p>这是文字</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="32%"  class="td_two">
+                                    这是文字
+                                </td>
+                                <td></td>
+                                <td width="32%" class="td_two">
+                                    这是文字
+                                </td>
+                              </tr>
+                            </table>
+                            <table width="100%" height="100%" cellspacing="0" cellpadding="0">
+                              <tr >
+                                <td rowspan="2" width="34%" align="center" valign="middle">
+                                    <img src="task_1_11_9.png">
+                                </td>
+                                <td width="32%" class="td_one">
+                                    <p>这是文字</p>
+                                </td>
+                                <td width="2%">
+                                </td>
+                                <td width="32%" class="td_one">
+                                    <p>这是文字</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="32%"  class="td_two">
+                                    这是文字
+                                </td>
+                                <td></td>
+                                <td width="32%" class="td_two">
+                                    这是文字
+                                </td>
+                              </tr>
+                            </table>                                      
+                        </div> 
+                    <!--列表-->         
+                    <div class="h"></div>
+                    <ul class="ui-list ui-list-link">
+                        <li class="ui-border-t">
+                            <div class="ui-list-img">
+                                <span style="background-image:url(task_1_11_10.png)"></span>
+                            </div>
+                            <div class="ui-list-info">
+                                <h4>标题标题</h4>
+                                <p class="ui-nowrap">文章来源 &nbsp;10分钟前</p>
+                            </div>
+                        </li>
+                        <li class="ui-border-t">
+                            <div class="ui-list-img">
+                                <span style="background-image:url(task_1_11_10.png)"></span>
+                            </div>
+                            <div class="ui-list-info">
+                                <h4>标题标题</h4>
+                                <p class="ui-nowrap">文章来源 &nbsp;7分钟前</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="bar"></div>
+                    <div class="div_two">
+                    	<p class="p4">岳云鹏撞脸男孩同台</p>
+                            <img src="task_1_11_10.png">
+                            <img src="task_1_11_10.png">
+                            <img src="task_1_11_10.png" style=" border-right:none;">
+                        <p class="p5">文章来源 &nbsp;7分钟前</p>
+                    </div>
+              </div>
+                    <script class="demo-script">
+                    (function (){
+                        var tab = new fz.Scroll('.ui-tab', {
+                            role: 'tab',
+                           
+                            interval: 5000
+                        });
+                        /* 滑动开始前 */
+                        tab.on('beforeScrollStart', function(fromIndex, toIndex) {
+                            console.log(fromIndex,toIndex);// from 为当前页，to 为下一页
+                        })
+                    })();
+                    </script>
+                </div>
+            </section>
+
+        </section><!-- /.ui-container-->
+    </body>
+</html>
